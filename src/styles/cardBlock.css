@@ -1,0 +1,122 @@
+.cards_block {
+    width: 60%;
+    margin-top: 32px;
+}
+
+.cards_block h2 {
+    border: 2px solid rgba(99, 99, 99, 0.67);
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 420px;
+    color: rgba(99, 99, 99, 0.67);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    width: 400px;
+    min-height: 200px;
+    justify-content: space-between;
+    background-color: rgba(99, 99, 99, 0.67);
+    box-shadow: 4px 4px 5px gray;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.comment_logoCard {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.card_logo {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.card_number {
+    text-align: center;
+    font-size: 22px;
+    font-family: Technic;
+    font-weight: 500;
+    color: white;
+}
+
+.card_comment {
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    color: rgba(23, 26, 37, 0.76);
+}
+
+.card_remove {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 20px 10px;
+}
+
+.img_remove {
+    display: block;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+    .card {
+        margin: 10px;
+    }
+
+    .cards_block {
+        width: 100%;
+    }
+
+    .cards_block h2 {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .card {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    .cards_block {
+        width: 340px;
+    }
+
+    .cards_block h2 {
+        width: 320px;
+        margin: 10px auto;
+    }
+
+    .comment_logoCard {
+        width: 280px;
+    }
+
+    .card_number {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .card_comment {
+        font-size: 14px;
+        width: 220px;
+    }
+
+    .card_remove {
+        width: 280px;
+        margin: 10px;
+    }
+}

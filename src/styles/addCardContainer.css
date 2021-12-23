@@ -1,0 +1,114 @@
+.addCard_cont {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(99, 99, 99, 0.67);
+    border-radius: 15px;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.addCard_cont h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(99, 99, 99, 0.67);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.input {
+    position: relative;
+    width: 240px;
+    display: block;
+    margin: 9px auto;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(0, 15, 46);
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.699);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.textarea {
+    height: 80px;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(179, 180, 83, 0.664);
+    background: rgba(255, 255, 255, 0.774);
+}
+
+button {
+    background-color: rgba(99, 99, 99, 0.67);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: rgba(54, 54, 54, 0.93);
+    color: white;
+}
+
+
+@media (min-width: 300px) and (max-width: 1000px) {
+    .addCard_cont {
+        width: 80%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .addCard_cont {
+        width: 270px;
+        margin: 10px auto;
+    }
+
+    .addCard_cont h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        position: center;
+        color: rgba(99, 99, 99, 0.67);
+    }
+
+    .form {
+        width: 260px;
+    }
+
+    .input {
+        width: 220px;
+    }
+
+    .textarea {
+        height: 80px;
+    }
+}

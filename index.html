@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/cardBlock.css">
+    <link rel="stylesheet" href="src/styles/addCardContainer.css">
+    <title>Card List</title>
+</head>
+
+<body>
+<main class="main">
+    <div class="main_container">
+        <div class="addCard_cont">
+            <h2>Add card</h2>
+            <form id="bankCardForm" class="form">
+                <div>
+                    <input class="input" id="cardNumber" type="text" required="required" name="cardNumber"
+                           placeholder="card number"/>
+                </div>
+                <div>
+                        <textarea maxlength='1024' class="input textarea" id="cardNote" required="required"
+                                  name="cardNote" placeholder="enter your comment"></textarea>
+                </div>
+                <button>Add</button>
+            </form>
+        </div>
+        <div class="cards_block">
+            <h2>My cards</h2>
+            <div class="cardsContainer">
+            </div>
+        </div>
+    </div>
+</main>
+<script src="src/index.js"></script>
+</body>
+</html>
